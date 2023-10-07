@@ -80,13 +80,14 @@
     background: url(sabilogo.png) center no-repeat;
     background-color: darkgrey;
     background-blend-mode: multiply;
-    background-position: 50%;
+    background-position: 30%;
     color: white;
     padding: 20px 0;
 }
 
 .cover h1{
     color: inherit;
+    font-size: 20px;
 }
 
 /* 2. Template Main terdiri dari tentang kami, navmain, kelas andalan dan pengumuman */
