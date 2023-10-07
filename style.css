@@ -111,7 +111,7 @@
 
 .navmain ul li, .group, .cover a, .navbar a, .badanjurusan div ul li {
     display: inline-block;
-    height: 15px;
+    max-height: 20px;
     padding: 8px;
     background-color: black;
     margin: 2px 0;
