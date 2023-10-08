@@ -2,16 +2,25 @@
 /* 1. Template Whatsapp */
 .whatsapp {
     position: fixed;
-    right: 10%;
-    bottom: 10%;
-    width: auto;
+    right: 7%;
+    bottom: 7%;
+    width: 50px;
+    height: 50px;
     background-color: whitesmoke;
     border: 1px solid black;
+    border-radius: 50% 50% 50% 0;
+    overflow: hidden;
+    
 }
 
 .whatsapp a img {
-    width: 75px;
+    display: inline-block;
+    width: 70px;
+    line-height: 50px;
+    margin-top: -10px;
+    margin-left: -10px;
 }
+
 
 /* 2. Template Navbar atau Menu Jurusan */
 
@@ -96,7 +105,8 @@
 .main{
     font-family: 'Times New Roman', Times, serif;
     width: 80%;
-    margin: 10px auto;
+    margin: 0 auto;
+    font-size: 13px;
 }
 
 #mainfoto {
@@ -106,6 +116,10 @@
     border: 10px solid black;
     padding: 10px;
     margin: 20px;
+}
+
+.main h3 {
+    text-align: left;
 }
 
 /* C. Template Universal berupa tombol menu dan lain-lain */
@@ -144,10 +158,7 @@
     display: inline;
 }
 
-h2{
-    text-align: center;
-}
-h3 {
+h2, h3{
     text-align: center;
 }
 ul {
@@ -155,7 +166,6 @@ ul {
 }
 p{
     text-align: justify;
-    text-indent: 20px;
 }
 
 /* D. Template Halaman Jurusan terdiri dari */
