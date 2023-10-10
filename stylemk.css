@@ -134,6 +134,10 @@ ul {
 }
 
 .kontainermatkul {
+    font-size: 13px;
+}
+
+.kontainermatkul {
     max-width: 900px;
     margin: 0 auto;
     padding-bottom: 0;
