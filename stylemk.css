@@ -124,6 +124,14 @@ ul {
 
 /* Style Mata Kuliah Main/Kontainer */
 
+.kontainermatkul .sinopsis #listsinopsis li {
+    background-color: white;
+    list-style-type: disc;
+}
+
+.kontainermatkul .sinopsis #listsinopsis {
+    margin-left: 0;
+}
 
 .kontainermatkul {
     max-width: 900px;
