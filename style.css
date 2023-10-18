@@ -104,7 +104,7 @@
 
 .main{
     font-family: 'Times New Roman', Times, serif;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     font-size: 13px;
 }
@@ -143,11 +143,85 @@
     background-color: forestgreen;
 }
 
+.navmain .katalogmk, .merchandise .katalogmerchandise, .quest .katalogquest {
+    background-color: black;
+    width: 150px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.kelas .katalogkelas {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.navmain .katalogmk .mainposter, .kelas .katalogkelas .mainposter, .merchandise .katalogmerchandise .mainposter, .quest .katalogquest .mainposter{
+    width: inherit;
+    overflow: hidden;
+}
+
+.navmain .katalogmk .isikatalogmk, .merchandise .katalogmerchandise .isimerchandise, .quest .katalogquest .isiquest {
+    width: auto;
+    height: 40px;
+    background-color: black;
+    margin-top: -110px;
+    opacity: 75%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.kelas .katalogkelas .isikelas {
+    width: auto;
+    height: 30px;
+    background-color: black;
+    margin-top: -40px;
+    opacity: 75%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.kelas .katalogkelas .isikelas:hover{
+    height: auto;
+    margin-top: -65px;
+}
+
+.navmain .katalogmk .isikatalogmk:hover {
+    height: 50px;
+    margin-top: -130px;
+}
+
+.merchandise .katalogmerchandise .isimerchandise:hover{
+    height: 70px;
+    margin-top: -130px;
+}
+
+.quest .katalogquest:hover{
+    width: 350px;
+    height: auto;
+    font-size: 20px;
+    display: block;
+}
+
+.navmain .katalogmk .isikatalogmk p, .kelas .katalogkelas .isikelas p, .merchandise .katalogmerchandise .isimerchandise p, .quest .katalogquest .isiquest p{
+    text-align: center;
+    padding: 7px;
+}
+
+
 .navmain ul {
     text-align: center;
 }
 
-.navmain ul li a, .badanjurusan div ul li a {
+.navmain ul li a, .badanjurusan div ul li a, .navmain .katalogmk .isikatalogmk a {
     text-decoration: inherit;
     color: inherit;
 }
@@ -158,13 +232,12 @@
 
 h2, h3{
     text-align: center;
+    font-size: 15px;
 }
 ul {
     margin: 0;
 }
-p{
-    text-align: justify;
-}
+
 
 /* D. Template Halaman Jurusan terdiri dari */
 
