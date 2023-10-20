@@ -73,7 +73,7 @@
 }
 
 .imgfoot img{
-    width: 250px;
+    width: 200px;
     margin: 15px;
 }
 
@@ -238,6 +238,21 @@ ul {
     margin: 0;
 }
 
+.igimg {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+}
+
+.igimg img {
+    width: 35px;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+.sosmedfoot ul li {
+    list-style-type: none;
+}
 
 /* D. Template Halaman Jurusan terdiri dari */
 

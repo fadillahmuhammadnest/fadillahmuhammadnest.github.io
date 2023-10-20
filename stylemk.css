@@ -72,9 +72,24 @@
 }
 
 .imgfoot img{
-    display: inline-block;
-    width: 250px;
+    width: 200px;
     margin: 15px;
+}
+
+.igimg {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+}
+
+.igimg img {
+    width: 35px;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+.sosmedfoot ul li {
+    list-style-type: none;
 }
 
 /* C. Template Universal berupa tombol menu dan lain-lain */
@@ -120,6 +135,7 @@ h2, h3{
 ul {
     margin: 0;
 }
+
 
 
 /* Style Mata Kuliah Main/Kontainer */
