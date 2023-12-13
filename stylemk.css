@@ -195,11 +195,11 @@ h4 {
 }
 
 .kontainermatkul div ul li:nth-child(2n-1) {
-    background-color: rgb(199, 199, 199);
+    background-color: #4a785e;
 }
 
 .kontainermatkul div ul li:nth-child(2n) {
-    background-color: whitesmoke;
+    background-color: #b4daa7;
 }
 
 .kontainermatkul div ul {
