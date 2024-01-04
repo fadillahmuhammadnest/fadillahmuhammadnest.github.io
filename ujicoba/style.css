@@ -4,7 +4,7 @@ body {
 .containa {
     background-color: #8900d8;
     max-width: 600px;
-    height: 500px;
+    height: 400px;
     padding: 12px;
     margin-left: auto;
     margin-right: auto;
@@ -21,7 +21,7 @@ body {
     background-color: black;
     height: 35px;
     width: 35px;
-    margin-top: -55px;
+    margin-top: -60px;
     margin-right: -20px;
     margin-left: auto;
     border-radius: 12px;
@@ -37,7 +37,7 @@ body {
     background-color: #1b1b1b;
     width: 50%;
     height: 100px;
-    margin-top: 320px;
+    margin-top: 225px;
     border-radius: 24px;
 }
 .containa .judul {
