@@ -4,20 +4,24 @@ body {
 .containa {
     background-color: #8900d8;
     position: relative;
-    max-width: 600px;
+    max-width: 720px;
     height: 400px;
     padding: 12px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 24px;
     box-sizing: border-box;
-    z-index: -2;
+    z-index: 1;
     overflow: hidden;
+}
+.containa .judul a {
+    position: relative;
+    z-index: 5;
 }
 .containa .menu {
     background-color: #1b1b1b;
     position: relative;
-    z-index: 1;
+    z-index: 3;
     max-width: 40%;
     height: 35px;
     border-radius: 100px;
@@ -31,7 +35,8 @@ body {
     margin-left: auto;
     border-radius: 12px;
     border: 12px solid black;
-    z-index: 1;
+    position: relative;
+    z-index: 3;
 }
 .containa .homeicon .icon {
     background-color: white;
@@ -41,6 +46,8 @@ body {
 }
 .containa .alasbawah {
     background-color: #1b1b1b;
+    position: relative;
+    z-index: 5;
     width: 220px;
     height: 80px;
     margin-top: 258px;
@@ -50,6 +57,8 @@ body {
     background-color: #1b1b1b;
     padding-top: 10px;
     padding-left: 20px;
+    position: relative;
+    z-index: 6;
     width: 180px;
     height: 100px;
     margin-top: -130px;
@@ -60,14 +69,18 @@ body {
     background-color: #c8f135;
     height: 35px;
     width: 35px;
+    position: relative;
+    z-index: 7;
     border-radius: 20px;
     margin-top: -75px;
     margin-left: 170px;
 }
 
-.containa .judul img {
+.containa .judul a img {
     width: 160px;
     margin-top: -25px;
+    position: relative;
+    z-index: 8;
     margin-bottom: -20px;
     margin-left: -10px;
 }
@@ -75,11 +88,14 @@ body {
 .containa .judul .course, .containa .judul .cart{
     width: 75px;
     height: 20px;
+    position: relative;
+    z-index: 8;
     background-color: rgba( 254, 254, 254, 0.3);
     border-radius: 10px;
     display: inline-block;
     margin-top: -30px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 @font-face {
@@ -90,11 +106,11 @@ body {
 .containa .judul .ptitle {
     color: white;
     font-size: 10px;
-    text-align: center;
     font-family: "Product Sans";
     margin: 5px;
     letter-spacing: 1px;
     line-height: 10px;
+    text-decoration: none;
 }
 
 .containa .poster {
@@ -102,5 +118,5 @@ body {
     position: absolute;
     margin-top: -12px;
     margin-left: -15px;
-    z-index: -1;
+    z-index: 2;
 }
