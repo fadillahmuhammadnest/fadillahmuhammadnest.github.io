@@ -77,6 +77,13 @@ body {
     border-radius: 20px;
     margin-top: -75px;
     margin-left: 170px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.containa .whatsapp a img {
+    width: 25px;
+
 }
 
 .containa .judul a img {
@@ -135,7 +142,7 @@ body {
     z-index: 1;
 }
 
-.containa .menu ul li a img {
+.containa .menu ul li a img{
     width: 18px;
 }
 
@@ -217,7 +224,7 @@ body {
     align-items: center;
     position: relative;
     z-index: 1;
-    transition: all 0.5s;
+    transition: all 1s;
    }
 
    .menu ul li:nth-child(1) {
