@@ -140,7 +140,7 @@ body {
 /* Hamburger Menu */
 
 .menu-toggle {
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 20px;
     justify-content: space-between;
@@ -189,6 +189,7 @@ body {
 }
 
 .menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
     transform: scale(0);
 }
 
@@ -197,9 +198,14 @@ body {
 /* Bentuk Mobile */
 @media screen and (max-width: 576px) {
    .containa .menu ul{
-    display: none;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 40px;
    } 
    .containa .menu {
     max-width: 45px;
+   }
+   .menu-toggle {
+    display: flex;
    }
 }
