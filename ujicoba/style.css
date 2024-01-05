@@ -100,7 +100,6 @@ body {
     letter-spacing: 1px;
     line-height: 15px;
 }
-
 .whatsapp {
     background-color: #c8f135;
     height: 35px;
@@ -295,25 +294,33 @@ body {
 
 .containb-icon {
     width: 70px;
-    height: 200px;
-    background-color: white;
+    height: 80px;
+    background-color: #ebeeff;
     border: 10px solid black;
     border-radius: 24px;
     display: flex;
     position: relative;
-    /* margin-top: -70px; */
+    margin-top: 20px;
     z-index: 2;
     margin-left: auto;
     margin-right: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .containb {
     max-width: 720px;
     min-height: 100px;
-    background-color: white;
+    background-color: #ebeeff;
     display: flex;
     position: relative;
-    margin-top: -130px;
+    margin-top: -30px;
     z-index: 3;
     border-radius: 24px;
     box-sizing: border-box;
+}
+.icon-b {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 24px;
 }
