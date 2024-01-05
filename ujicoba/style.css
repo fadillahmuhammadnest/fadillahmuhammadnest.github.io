@@ -321,6 +321,7 @@ body {
     box-sizing: border-box;
     font-family: "product sans";
     padding: 24px;
+    flex-direction: column;
 }
 .containb .headline-b .judul-b {
     font-size: 22px;
@@ -339,4 +340,16 @@ body {
     height: 35px;
     background-color: black;
     border-radius: 24px;
+}
+.body-containb{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+.body-containb a .content-b {
+    min-width: 150px;
+    height: 200px;
+    background-color: black;
+    display: flex;
 }
