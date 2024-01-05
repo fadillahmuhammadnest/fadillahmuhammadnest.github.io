@@ -22,10 +22,13 @@ body {
     background-color: #1b1b1b;
     position: relative;
     z-index: 3;
-    max-width: 40%;
+    max-width: 200px;
+    width: 50%;
     height: 35px;
     border-radius: 100px;
+    display: flex;
 }
+
 .containa .homeicon {
     background-color: black;
     height: 35px;
@@ -119,4 +122,17 @@ body {
     margin-top: -12px;
     margin-left: -15px;
     z-index: 2;
+}
+
+.containa .menu ul {
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.containa .menu ul li a img {
+    width: 18px;
 }
