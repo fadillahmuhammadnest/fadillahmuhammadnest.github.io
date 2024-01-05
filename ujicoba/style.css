@@ -137,6 +137,61 @@ body {
     width: 18px;
 }
 
+/* Hamburger Menu */
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 8px;
+    margin-left: 12px;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    margin-top: -3px;
+    margin-left: -9px;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.menu-toggle span {
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+    
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+    
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+}
+
 /* Responsive */
 
 /* Bentuk Mobile */
@@ -145,6 +200,6 @@ body {
     display: none;
    } 
    .containa .menu {
-    max-width: 35px;
+    max-width: 45px;
    }
 }
