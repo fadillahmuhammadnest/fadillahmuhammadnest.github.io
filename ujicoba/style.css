@@ -25,7 +25,7 @@ body {
     max-width: 200px;
     width: 50%;
     height: 35px;
-    border-radius: 100px;
+    border-radius: 15px;
     display: flex;
 }
 
@@ -135,4 +135,16 @@ body {
 
 .containa .menu ul li a img {
     width: 18px;
+}
+
+/* Responsive */
+
+/* Bentuk Mobile */
+@media screen and (max-width: 576px) {
+   .containa .menu ul{
+    display: none;
+   } 
+   .containa .menu {
+    max-width: 35px;
+   }
 }
