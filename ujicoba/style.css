@@ -343,13 +343,12 @@ body {
 }
 .body-containb{
     margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
 }
 .body-containb a .content-b {
-    min-width: 150px;
-    height: 200px;
     background-color: black;
     display: flex;
+    height: 200px;
 }
