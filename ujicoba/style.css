@@ -217,7 +217,7 @@ body {
     align-items: center;
     position: relative;
     z-index: 1;
-    transition: all 1s;
+    transition: all 0.5s;
    }
 
    .menu ul li:nth-child(1) {
