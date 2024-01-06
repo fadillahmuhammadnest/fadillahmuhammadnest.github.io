@@ -386,18 +386,18 @@ body {
     /* background-color: #ebeeff; */
     position: absolute;
     margin-top: -10px;
-    margin-left: -120px;
+    margin-left: -119px;
     border-bottom-right-radius: 24px;
-    box-shadow: 5px 5px 0 5px #ebeeff;
+    box-shadow: 5px 5px 0 4px #ebeeff;
 }
 .ujitrans2 {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background-color: rgba( 255, 0, 0, 0);
     /* background-color: #ebeeff; */
     position: absolute;
-    margin-top: -10px;
-    margin-left: 120px;
+    margin-top: -4px;
+    margin-left: 115px;
     border-bottom-left-radius: 24px;
     box-shadow: -20px 0 0 0 #ebeeff;
 }
