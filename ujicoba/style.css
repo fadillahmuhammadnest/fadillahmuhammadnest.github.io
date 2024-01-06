@@ -48,13 +48,13 @@ body {
     margin-top: -58px;
     margin-right: -21px;
     margin-left: auto;
-    border-radius: 12px;
+    border-radius: 24px;
     border: 12px solid black;
     position: relative;
     z-index: 3;
 }
 .containa .homeicon .icon {
-    background-color: white;
+    background-color: black;
     height: 35px;
     width: 35px;
     border-radius: 15px;
@@ -422,4 +422,24 @@ body {
     margin-left: -130px;
     border-bottom-right-radius: 24px;
     box-shadow: 5px 8px 0 0 black;
+}
+.ujitrans5 {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    margin-top: -36px;
+    margin-left: -42px;
+    border-top-right-radius: 24px;
+    box-shadow: 5px -8px 0 3px black;
+}
+.ujitrans6 {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 8px;
+    border-top-right-radius: 24px;
+    box-shadow: 6px -6px 0 5px black;
 }
