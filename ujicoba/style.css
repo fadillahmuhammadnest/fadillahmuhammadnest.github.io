@@ -677,7 +677,7 @@ body {
 }
 .containc .main-judulc {
     width: 150px;
-    height: 150px;
+    height: 140px;
     background-color: #0e0f11;
     position: absolute;
     bottom: 10px;
@@ -694,18 +694,26 @@ body {
     margin-left: -60px;
 } 
 .containc .main-judulc .trans-mainc1 {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     background-color: rgba(255, 0, 0, 0);
     position: absolute;
     z-index: 1;
     margin-top: 80px;
-    margin-left: -30px;
-    border-top-right-radius: 24px;
-    box-shadow: 6px -6px 0 5px #0e0f11;
-
+    margin-left: -45px;
+    border-top-right-radius: 50px;
+    box-shadow: 15px -15px 0 0 #0e0f11;
 }
-
+.containc .main-judulc .iconmain-judulc {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    z-index: 3;
+    margin-top: 90px;
+    margin-left: -60px;
+    border-radius: 25px;
+}
 
 /* Container D */
 
