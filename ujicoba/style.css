@@ -415,7 +415,7 @@ body {
 .ujitrans4 {
     width: 40px;
     height: 40px;
-    background-color: rgba( 255, 0, 0, 1);
+    background-color: rgba( 255, 0, 0, 0);
     /* background-color: #ebeeff; */
     position: absolute;
     margin-top: -20px;
