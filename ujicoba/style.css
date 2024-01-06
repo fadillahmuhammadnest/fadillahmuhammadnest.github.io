@@ -415,13 +415,13 @@ body {
 .ujitrans4 {
     width: 40px;
     height: 40px;
-    background-color: rgba( 255, 0, 0, 0);
+    background-color: rgba( 255, 0, 0, 1);
     /* background-color: #ebeeff; */
     position: absolute;
     margin-top: -20px;
     margin-left: -130px;
     border-bottom-right-radius: 24px;
-    box-shadow: 5px 8px 0 0 black;
+    box-shadow: 7px 7px 0 2px black;
 }
 .ujitrans5 {
     width: 30px;
