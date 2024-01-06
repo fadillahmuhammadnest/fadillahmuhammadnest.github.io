@@ -503,11 +503,71 @@ body {
     position: absolute;
 }
 .containc .trans-c6 {
-    max-width: 720px;
+    width: 720px;
     height: 5px;
-    position: relative;
+    position: absolute;
     margin-top: -30px;
     background-color: #ebeeff;
+}
+.containc .trans-c7 {
+    width: 720px;
+    height: 10px;
+    position: absolute;
+    margin-top: 265px;
+    background-color: #ebeeff;
+}
+.containc .trans-c8 {
+    width: 5px;
+    height: 300px;
+    position: absolute;
+    margin-top: -30px;
+    background-color: #ebeeff;
+}
+.containc .trans-c9 {
+    width: 5px;
+    height: 300px;
+    position: absolute;
+    margin-top: -30px;
+    right: 0;
+    background-color: #ebeeff;
+}
+.containc .trans-c10 {
+    width: 135px;
+    height: 135px;
+    bottom: 0;
+    border-top-right-radius: 24px;
+    position: absolute;
+    background-color: #ebeeff;
+}
+.containc .trans-c11 {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-top: -30px;
+    margin-left: -30px;
+    background-color: #ebeeff;
+}
+.containc .trans-c12 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 5px;
+    border-top-left-radius: 24px;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: -5px -5px 0 0 #ebeeff;
+}
+.trans-c13 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: -80.5px;
+    margin-left: -4px;
+    border-bottom-left-radius: 24px;
+    transform: rotate(45deg);
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 1px 5px 0 -2px black;
 }
 
 
