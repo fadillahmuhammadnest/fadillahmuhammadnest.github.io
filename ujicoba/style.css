@@ -736,12 +736,16 @@ body {
 .containc .donate-mainc {
     width: 250px;
     height: 100px;
-    background-color: #0E0F11;
+    background-color: rgba(14, 15, 17, 0.9);
     position: absolute;
     z-index: 1;
     right: 15px;
     top: 40px;
-    border-radius: 30px;
+    border-radius: 30px;   
+}
+
+.containc .donate-mainc p {
+    font-size: 10px;
 }
 
 /* Container D */
