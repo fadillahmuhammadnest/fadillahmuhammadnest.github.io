@@ -843,13 +843,14 @@ body {
     font-size: 5px;
     text-align: center;
 }
-.containc .donate-mainc .iconmain-donate1 {
+.containc .donate-mainc div {
     background-color: black;
     border-radius: 12px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 1px;
 }
 .containc .donate-mainc .iconmain-donate2 {
     background-color: blue;
@@ -857,8 +858,14 @@ body {
 .containc .donate-mainc .iconmain-donate2 div {
     background-color: red;
 }
-.containc .donate-mainc .iconmain-donate1 {
+.containc .donate-mainc .linkadmin {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.containc .donate-mainc .linkadmin:hover {
+    background-color: aliceblue;
 }
 .containc .donate-mainc .iconmain-donate2 {
     flex: 3;
