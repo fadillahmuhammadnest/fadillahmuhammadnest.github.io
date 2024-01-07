@@ -801,20 +801,43 @@ body {
     .containc .donate-mainc {
         right: 15px;
         left: auto;
-        width: 250px;
+        width: 65%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        gap: 5px;
+    }
+    .containc .donate-mainc div {
+
     }
 }
 
 
 .donate-mainc {
-    width: 350px;
-    height: 100px;
+    width: 50%;
+    height: 110px;
     background-color: rgba(14, 15, 17, 0.9);
     position: absolute;
     z-index: 1;
     left: 25px;
     top: 40px;
-    border-radius: 30px;   
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 5px;   
+}
+.containc .donate-mainc div {
+    background-color: black;
+    height: 90px;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containc .donate-mainc .iconmain-donate1 {
+    background-color: rgba(255, 0, 0, 0);
 }
 
 .containc .donate-mainc p {
