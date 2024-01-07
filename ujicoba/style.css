@@ -865,7 +865,9 @@ body {
     text-decoration: none;
 }
 .containc .donate-mainc .linkadmin:hover {
-    background-color: aliceblue;
+    p {
+        color: red;
+    }
 }
 .containc .donate-mainc .iconmain-donate2 {
     flex: 3;
