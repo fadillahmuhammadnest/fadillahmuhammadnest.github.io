@@ -778,12 +778,12 @@ body {
         box-shadow: 10px -10px 0 1px rgba(14, 15, 17, 0.9);
     }
     .containc .main-judulc .iconmain-judulc {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         background-color: #0c0d0f;
         position: absolute;
         z-index: 3;
-        margin-top: 65px;
+        margin-top: 60px;
         margin-left: -45px;
         border-radius: 25px;
     }
@@ -933,7 +933,19 @@ body {
 .containc .donate-mainc p {
     font-size: 10px;
 }
-
+.main-judulc .isibawahmain-judulc {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-judulc .iconmain-judulc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-judulc .isibawahmain-judulc .linksosmed-mainc .logo-sosmed, .main-judulc .iconmain-judulc .linksosmed-mainc .logo-sosmed {
+    width: 25px;
+}
 
 /* Container D */
 
