@@ -484,6 +484,10 @@ body {
     font-family: "Product Sans";
     letter-spacing: 1px;
 }
+.containc .isi-transc1 p {
+    font-size: 15px;
+    font-weight: 900;
+}
 .containc .trans-c2 {
     width: 50px;
     height: 30px;
@@ -692,6 +696,9 @@ body {
     margin-left: 90px;
     margin-top: -15px;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .containc .main-judulc {
     width: 180px;
@@ -944,9 +951,21 @@ body {
     align-items: center;
 }
 .main-judulc .isibawahmain-judulc .linksosmed-mainc .logo-sosmed, .main-judulc .iconmain-judulc .linksosmed-mainc .logo-sosmed {
-    width: 25px;
+    width: 20px;
 }
-
+.containc .main-judulc .isimain-judulc p {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.containc .main-judulc .isimain-judulc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trans-c4 .judul-ccontain .icon-judulc .icontag-judulc {
+    width: 20px;
+}
 /* Container D */
 
 .containd {
