@@ -675,17 +675,64 @@ body {
 }
 .judul-ccontain .isi-ccontain {
     width: 85px;
-    height: 120px;
+    height: 125px;
     background-color: #0e0f11;
     margin-top: -30px;
+    position: absolute;
+    font-size: 12px;
+    font-family: "Product Sans";
+    color: white;
     border-radius: 44px 12px 24px 24px;
+}
+.judul-ccontain .isi-ccontain div {
+    background-color: #0e0f11;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    height: auto;
+    padding: 2px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.judul-ccontain .isi-ccontain .kaos-125k1 {
+    width: 40px;
+    top: 20px;
+    left: 10px;
+}
+.judul-ccontain .isi-ccontain .merch-dll {
+    width: 55px;
+    top: 38px;
+    left: 10px;
+}
+.judul-ccontain .isi-ccontain .konsul-30k1 {
+    width: 45px;
+    top: 45px;
+    left: 60px;
+    transform: rotate(25deg);
+}
+.judul-ccontain .isi-ccontain .buy-now {
+    border: none;
+    bottom: 10px;
+    left: 20px;
+    flex-direction: column;
+    padding: 0;
+}
+.judul-ccontain .isi-ccontain .buy-now p {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.trans-c4 .judul-ccontain .isi-ccontain a {
+    color: white;
 }
 .judul-ccontain .trans-cjudul1 {
     width: 15px;
     height: 15px;
     background-color: rgba(255, 0, 0, 0);
-    margin-top: -110px;
+    margin-top: -20px;
     margin-left: 85px;
+    position: absolute;
+    z-index: 1;
     border-bottom-left-radius: 50px;
     box-shadow: -5px 5px 0 4px #0e0f11;
 }
@@ -693,6 +740,8 @@ body {
     width: 25px;
     height: 25px;
     background-color: #df282a;
+    position: absolute;
+    z-index: 2;
     margin-left: 90px;
     margin-top: -15px;
     border-radius: 15px;
@@ -722,7 +771,7 @@ body {
 .containc .main-judulc .trans-mainc1 {
     width: 30px;
     height: 30px;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(255, 0, 0, 0.7);
     position: absolute;
     z-index: 1;
     margin-top: 73px;
