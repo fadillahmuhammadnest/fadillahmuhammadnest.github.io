@@ -809,8 +809,46 @@ body {
         align-items: stretch;
         gap: 2px;
     }
-    
-    
+    .containc .donate-mainc .iconmain-donate3 {
+        flex-direction: row;
+        align-items: stretch;
+        display: flex;
+    }
+    .containc .donate-mainc .iconmain-donate3 .divp-maindonate2 {
+        flex-direction: column;
+    }
+    .donate-mainc .iconmain-donate2 a .iconmain-donate3 {
+        flex-direction: row;
+        gap: 0;
+    }
+    .containc .donate-mainc .iconmain-donate3 .divimg-maindonate2 {
+        flex: 1;
+    }
+    .containc .donate-mainc .iconmain-donate3 .divp-maindonate2 {
+        flex: 4;
+    }
+    .divimg-maindonate2 {
+        flex: 1;
+    }
+    .divp-maindonate2 {
+        flex: 4;
+    }
+    .containc .donate-mainc .namaadmin-donate1  {
+        font-size: 5px;
+        text-align: left;
+    }
+    .containc .donate-mainc .iconmain-donate2 a .iconmain-donate3 .divp-maindonate2 {
+        align-items: flex-start;
+    }
+    .containc .iconmain-donate2 a .iconmain-donate3 .divp-maindonate2 {
+        justify-content: center;
+    }
+    .containc .donate-mainc .iconmain-donate2 a .divimg-maindonate2 {
+        align-items: center;
+    }
+    .containc .donate-mainc .iconmain-donate3 {
+        border-radius: 12px 0 0 12px;
+    }
 }
 
 
@@ -825,10 +863,9 @@ body {
     box-sizing: border-box;
     border-radius: 30px;
     display: flex;
-}
-.containc .donate-mainc .iconmain-donate2 {
-    align-items: stretch;
-    gap: 2px;
+    padding: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .containc .donate-mainc .iconmain-donate2 div{
     flex: 1;
@@ -836,15 +873,27 @@ body {
 .containc .donate-mainc .iconmain-donate1 {
     flex-direction: column;
 }
-.containc .donate-mainc .iconmain-donate1 .img-maindonate1 {
+.containc .donate-mainc .iconmain-donate1 .img-maindonate1, .img-maindonate3 {
     width: 25px;
 }
-.containc .donate-mainc .iconmain-donate1 .namaadmin-donate1 {
-    font-size: 5px;
+.iconmain-donate2 a .iconmain-donate3 {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.iconmain-donate2 a .iconmain-donate3 .divp-maindonate2 {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.containc .donate-mainc .namaadmin-donate1  {
+    font-size: 7px;
+    text-align: center;
+}
+.containc .donate-mainc .namaadmin-donate2  {
+    font-size: 10px;
     text-align: center;
 }
 .containc .donate-mainc div {
-    background-color: black;
     border-radius: 12px;
     color: white;
     display: flex;
@@ -853,10 +902,15 @@ body {
     letter-spacing: 1px;
 }
 .containc .donate-mainc .iconmain-donate2 {
-    background-color: blue;
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 3px;
 }
-.containc .donate-mainc .iconmain-donate2 div {
-    background-color: red;
+.donate-mainc .iconmain-donate2 a .divimg-maindonate2 {
+    align-items: flex-end;
+}
+.containc .donate-mainc .iconmain-donate2 a .iconmain-donate3 {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .containc .donate-mainc .linkadmin {
     flex: 1;
