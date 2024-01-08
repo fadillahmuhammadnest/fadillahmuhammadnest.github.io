@@ -1019,7 +1019,7 @@ body {
 
 .containd {
     max-width: 720px;
-    min-height: 300px;
+    min-height: 200px;
     background-color: #0E0F11;
     margin-top: 7px;
     border-radius: 24px;
@@ -1027,3 +1027,14 @@ body {
     z-index: 3;
 }
 
+/* Container E */
+
+.containe {
+    max-width: 720px;
+    min-height: 200px;
+    background-color: #ebeeff;
+    margin-top: 7px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+}
