@@ -975,9 +975,7 @@ body {
     text-decoration: none;
 }
 .containc .donate-mainc .linkadmin:hover {
-    p {
-        color: red;
-    }
+    background-color: red;
 }
 .containc .donate-mainc .iconmain-donate2 {
     flex: 3;
