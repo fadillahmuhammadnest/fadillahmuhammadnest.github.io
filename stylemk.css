@@ -21,6 +21,7 @@
     margin-left: -10px;
 }
 
+
 /* 2. Template Navbar atau Menu Jurusan */
 
 .navbar {
@@ -76,27 +77,54 @@
     margin: 15px;
 }
 
-.igimg {
-    background-color: white;
-    width: 25px;
-    height: 25px;
+/* B. Template halaman home terdiri dari cover dan main */
+/* 1. Template Cover */
+
+
+
+.cover {
+    height: auto;
+    text-align: center; 
+    font-family:'Times New Roman', Times, serif ;
+    background: url(sabilogo.png) center no-repeat;
+    background-color: darkgrey;
+    background-blend-mode: multiply;
+    background-position: 30%;
+    color: white;
+    padding: 20px 0;
 }
 
-.igimg img {
-    width: 35px;
-    margin-top: -5px;
-    margin-left: -5px;
+.cover h1{
+    color: inherit;
+    font-size: 20px;
+    padding: 10px;
 }
 
-.sosmedfoot ul li {
-    list-style-type: none;
+/* 2. Template Main terdiri dari tentang kami, navmain, kelas andalan dan pengumuman */
+
+.main{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+#mainfoto {
+    float: right;
+    width: 30%;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.main h3 {
+    text-align: left;
 }
 
 /* C. Template Universal berupa tombol menu dan lain-lain */
 
 .navmain ul li, .group, .cover a, .navbar a, .badanjurusan div ul li {
     display: inline-block;
-    height: 15px;
+    max-height: 20px;
     padding: 8px;
     background-color: black;
     margin: 2px 0;
@@ -115,11 +143,85 @@
     background-color: forestgreen;
 }
 
+.navmain .katalogmk, .merchandise .katalogmerchandise, .quest .katalogquest {
+    background-color: black;
+    width: 150px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.kelas .katalogkelas {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.navmain .katalogmk .mainposter, .kelas .katalogkelas .mainposter, .merchandise .katalogmerchandise .mainposter, .quest .katalogquest .mainposter{
+    width: inherit;
+    overflow: hidden;
+}
+
+.navmain .katalogmk .isikatalogmk, .merchandise .katalogmerchandise .isimerchandise, .quest .katalogquest .isiquest {
+    width: auto;
+    height: 40px;
+    background-color: black;
+    margin-top: -110px;
+    opacity: 75%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.kelas .katalogkelas .isikelas {
+    width: auto;
+    height: 30px;
+    background-color: black;
+    margin-top: -40px;
+    opacity: 75%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.kelas .katalogkelas .isikelas:hover{
+    height: auto;
+    margin-top: -65px;
+}
+
+.navmain .katalogmk .isikatalogmk:hover {
+    height: 50px;
+    margin-top: -130px;
+}
+
+.merchandise .katalogmerchandise .isimerchandise:hover{
+    height: 70px;
+    margin-top: -130px;
+}
+
+.quest .katalogquest:hover{
+    width: 350px;
+    height: auto;
+    font-size: 20px;
+    display: block;
+}
+
+.navmain .katalogmk .isikatalogmk p, .kelas .katalogkelas .isikelas p, .merchandise .katalogmerchandise .isimerchandise p, .quest .katalogquest .isiquest p{
+    text-align: center;
+    padding: 7px;
+}
+
+
 .navmain ul {
     text-align: center;
 }
 
-.navmain ul li a, .badanjurusan div ul li a {
+.navmain ul li a, .badanjurusan div ul li a, .navmain .katalogmk .isikatalogmk a {
     text-decoration: inherit;
     color: inherit;
 }
@@ -130,78 +232,57 @@
 
 h2, h3{
     text-align: center;
+    font-size: 15px;
 }
-
 ul {
     margin: 0;
 }
 
-
-
-/* Style Mata Kuliah Main/Kontainer */
-
-.kontainermatkul .sinopsis #listsinopsis li {
+.igimg {
     background-color: white;
-    list-style-type: disc;
+    width: 25px;
+    height: 25px;
 }
 
-.kontainermatkul .sinopsis #listsinopsis {
-    margin-left: 0;
+.igimg img {
+    width: 35px;
+    margin-top: -5px;
+    margin-left: -5px;
 }
 
-.kontainermatkul {
-    font-size: 13px;
+.sosmedfoot ul li {
+    list-style-type: none;
 }
 
-.kontainermatkul {
-    max-width: 900px;
-    margin: 0 auto;
-    padding-bottom: 0;
-    box-sizing: border-box;
-}
+/* D. Template Halaman Jurusan terdiri dari */
 
-.matkul {
+.jurusan{
     text-align: center;
     border-top: 2px solid darkgray;
     border-bottom: 2px solid darkgray;
-    margin: 10px auto;
-    max-width: 900px;
+    display: block;
+    margin: 5px 0;
+}
+.badanjurusan div {
+    width: 100%;
+    height: auto;
 }
 
-.kontainermatkul div ul li, div h4 {
-    margin: 0;
+.badanjurusan div:nth-child(2n-1) {
+    background-color: wheat;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.badanjurusan div:nth-child(2n) {
+    background-color: blanchedalmond;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-h4 {
-    background-color: black;
-    color: white;
-    padding: 10px;
+.badanjurusan div h3 {
+    margin-top: 0;
 }
 
-.kontainermatkul ul li {
-    list-style-type: none;
-    margin-left: -10px;
-    padding: 10px;
-}
 
-.kontainermatkul div ul li a {
-        text-decoration: none;
-        color: black;
-}
 
-.kontainermatkul div ul li a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-.kontainermatkul div ul li:nth-child(2n-1) {
-    background-color: #4a785e;
-}
-
-.kontainermatkul div ul li:nth-child(2n) {
-    background-color: #b4daa7;
-}
-
-.kontainermatkul div ul {
-    margin-left: -40px;
-}
