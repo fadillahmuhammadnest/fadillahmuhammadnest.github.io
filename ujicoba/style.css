@@ -1024,8 +1024,77 @@ body {
     margin-top: 7px;
     border-radius: 24px;
     position: relative;
+    z-index: 5;
+}
+
+.containe-icon {
+    width: 70px;
+    height: 80px;
+    background-color: #0E0F11;
+    border: 10px solid black;
+    border-radius: 24px;
+    display: flex;
+    position: relative;
+    margin-top: -20px;
+    z-index: 4;
+    margin-left: 30px;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.icon-b {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 24px;
+    position: relative;
     z-index: 3;
 }
+.ujitrans-e {
+    width: 50px;
+    height: 50px;
+    background-color: rgba( 255, 0, 0, 0);
+    /* background-color: #ebeeff; */
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -119px;
+    border-top-right-radius: 24px;
+    box-shadow: 5px -5px 0 4px #0E0F11;
+}
+.ujitrans2-e {
+    width: 45px;
+    height: 45px;
+    background-color: rgba( 255, 0, 0, 0);
+    /* background-color: #ebeeff; */
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 115px;
+    border-top-left-radius: 24px;
+    box-shadow: -20px -10px 0 0 #0E0F11;
+}
+.ujitrans3-e {
+    width: 40px;
+    height: 50px;
+    background-color: rgba( 255, 0, 0, 0);
+    /* background-color: #ebeeff; */
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 130px;
+    border-top-left-radius: 21px;
+    box-shadow: -5px -8px 0 0 black;
+}
+.ujitrans4-e {
+    width: 40px;
+    height: 40px;
+    background-color: rgba( 255, 0, 0, 0);
+    /* background-color: #ebeeff; */
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -130px;
+    border-top-right-radius: 24px;
+    box-shadow: 7px -7px 0 2px black;
+}
+
 
 /* Container E */
 
@@ -1037,4 +1106,91 @@ body {
     border-radius: 24px;
     position: relative;
     z-index: 3;
+    margin-top: -70px;
+    box-sizing: border-box;
+    font-family: "product sans";
+    padding: 15px 24px 24px 24px;
+}
+.containe .headline-e .judul-e {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0;
+}
+.containe .headline-e .keterangan-e {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.containe .headline-e {
+    margin-left: 120px;
+}
+.icon-e {
+    width: 35px;
+    height: 35px;
+    background-color: #ebeeff;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+}
+.body-containe{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 5px;
+}
+.body-containe a .content-e {
+    background-color: black;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.body-containe a .content-e .title-content {
+    width: auto;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.6);
+    margin-top: auto;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body-containe a {
+    text-decoration: none;
+    color: white;
+}
+.body-containe p {
+    font-size: 10px;
+    margin: 0;
+}
+/* Kontainer F */
+
+.containf {
+    max-width: 720px;
+    height: auto;
+    background-color: orange;
+    margin-top: 8px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+    box-sizing: border-box;
+    font-family: "product sans";
+    padding: 15px 24px 24px 24px;   
+}
+.containf p {
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+.containf a img {
+    width: 20px;
+}
+.containf a {
+    margin: 5px;
 }
