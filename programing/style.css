@@ -1,0 +1,1194 @@
+body {
+    background-color: black;
+}
+
+.container {
+    max-width: 720px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Home Container A Code */
+.containa {
+    background-color: black;
+    /* background-color: #8900d8; */
+    position: relative;
+    max-width: 720px;
+    height: 400px;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    box-sizing: border-box;
+    z-index: 5;
+    overflow: hidden;
+}
+.containa .judul a {
+    position: relative;
+    z-index: 5;
+}
+.containa .menu {
+    background-color: #1b1b1b;
+    position: relative;
+    z-index: 4;
+    max-width: 200px;
+    width: 50%;
+    height: 35px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.containa .homeicon {
+    background-color: black;
+    height: 35px;
+    width: 35px;
+    margin-top: -58px;
+    margin-right: -21px;
+    margin-left: auto;
+    border-radius: 24px;
+    border: 12px solid black;
+    position: relative;
+    z-index: 3;
+}
+.containa .homeicon .icon {
+    background-color: black;
+    height: 35px;
+    width: 35px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.containa .homeicon .icon img {
+    width: 35px;
+}
+.containa .poster {
+    height: 400px;
+    position: absolute;
+    margin-top: -12px;
+    margin-left: -15px;
+    z-index: 2;
+}
+
+.alasbawah {
+    background-color: #1b1b1b;
+    position: relative;
+    z-index: 5;
+    width: 220px;
+    height: 80px;
+    margin-top: -90px;
+    margin-left: 12px;
+    border-radius: 24px;
+}
+.judul {
+    background-color: #1b1b1b;
+    padding-top: 10px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 6;
+    width: 180px;
+    height: 100px;
+    margin-top: -130px;
+    margin-left: 12px;
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.judul p {
+    color: white;
+    font-size: 11px;
+    font-family: "Product Sans";
+    margin: -15px 5px 10px 5px;
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+.whatsapp {
+    background-color: #c8f135;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    z-index: 7;
+    border-radius: 20px;
+    margin-top: -75px;
+    margin-left: 175px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.whatsapp a img {
+    width: 25px;
+
+}
+
+.judul a img {
+    width: 160px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 8;
+    margin-bottom: -20px;
+    margin-left: -10px;
+}
+
+.judul .donate-h1, .judul .cart-h1{
+    width: 75px;
+    height: 20px;
+    position: relative;
+    z-index: 8;
+    background-color: rgba( 254, 254, 254, 0.3);
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: -30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url('ProductSans-Regular.ttf') format('truetype');
+}
+
+.judul .ptitle {
+    color: white;
+    font-size: 10px;
+    font-family: "Product Sans";
+    margin: 5px;
+    letter-spacing: 1px;
+    line-height: 10px;
+    text-decoration: none;
+}
+
+
+
+.containa .menu ul {
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+.containa .menu ul li a img{
+    width: 18px;
+}
+
+/* Hamburger Menu */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 8px;
+    margin-left: 12px;
+    z-index: 2;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    margin-top: -3px;
+    margin-left: -9px;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.menu-toggle span {
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+    
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+    
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Responsive */
+
+/* Bentuk Mobile */
+@media screen and (max-width: 576px) {
+   .containa .menu ul{
+    position: absolute;
+    flex-direction: column;
+    margin-top: 40px;
+    z-index: 1;
+   } 
+
+   .containa .menu ul li {
+    background-color: #1b1b1b;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 1s;
+   }
+
+   .menu ul li:nth-child(1) {
+    transform: translateY(-40px);
+    opacity: 0;
+   }
+   .containa .menu ul li:nth-child(2) {
+    transform: translateY(-75px);
+    opacity: 0;
+   }
+   .containa .menu ul li:nth-child(3) {
+    transform: translateY(-110px);
+    opacity: 0;
+   }
+   .containa .menu ul li:nth-child(4) {
+    transform: translateY(-145px);
+    opacity: 0;
+   }
+   .containa .menu ul li:nth-child(5) {
+    transform: translateY(-180px);
+    opacity: 0;
+   }
+
+   .containa .menu {
+    max-width: 45px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+   }
+   .menu-toggle {
+    display: flex;
+   }
+
+   .containa .menu ul li.slide {
+    transform: translate(0);
+    opacity: 1;
+   }
+}
+
+/* Container B Code */
+
+.containb-icon {
+    width: 70px;
+    height: 80px;
+    background-color: #ebeeff;
+    border: 10px solid black;
+    border-radius: 24px;
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.containb {
+    max-width: 720px;
+    min-height: 100px;
+    background-color: #ebeeff;
+    display: flex;
+    position: relative;
+    margin-top: -30px;
+    z-index: 3;
+    border-radius: 24px;
+    box-sizing: border-box;
+    font-family: "product sans";
+    padding: 24px;
+    flex-direction: column;
+}
+.containb .headline-b .judul-b {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0;
+}
+.containb .headline-b .keterangan-b {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.icon-b {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+}
+.body-containb{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 5px;
+}
+.body-containb a .content-b {
+    background-color: black;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.body-containb a .content-b .title-content {
+    width: auto;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.6);
+    margin-top: auto;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body-containb a {
+    text-decoration: none;
+    color: white;
+}
+.body-containb p {
+    font-size: 10px;
+    margin: 0;
+}
+.ujitrans {
+    width: 50px;
+    height: 50px;
+    background-color: rgba( 255, 0, 0, 0);
+    /* background-color: #ebeeff; */
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -119px;
+    border-bottom-right-radius: 24px;
+    box-shadow: 5px 5px 0 4px #ebeeff;
+}
+.ujitrans2 {
+    width: 45px;
+    height: 45px;
+    background-color: rgba( 255, 0, 0, 0);
+    /* background-color: #ebeeff; */
+    position: absolute;
+    margin-top: -4px;
+    margin-left: 115px;
+    border-bottom-left-radius: 24px;
+    box-shadow: -20px 0 0 0 #ebeeff;
+}
+.ujitrans3 {
+    width: 40px;
+    height: 50px;
+    background-color: rgba( 255, 0, 0, 0);
+    /* background-color: #ebeeff; */
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 130px;
+    border-bottom-left-radius: 21px;
+    box-shadow: -5px 8px 0 0 black;
+}
+.ujitrans4 {
+    width: 40px;
+    height: 40px;
+    background-color: rgba( 255, 0, 0, 0);
+    /* background-color: #ebeeff; */
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -130px;
+    border-bottom-right-radius: 24px;
+    box-shadow: 7px 7px 0 2px black;
+}
+.ujitrans5 {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    margin-top: -36px;
+    margin-left: -42px;
+    border-top-right-radius: 24px;
+    box-shadow: 5px -8px 0 3px black;
+}
+.ujitrans6 {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 8px;
+    border-top-right-radius: 24px;
+    box-shadow: 6px -6px 0 5px black;
+}
+
+/* Container C bagian Donasi dan Dukungan */
+
+.containc {
+    max-width: 720px;
+    min-height: 300px;
+    background-color: #e2a41f;
+    border-radius: 24px;
+    margin-top: 7px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+}
+.containc .trans-c1 {
+    width: 130px;
+    height: 35px;
+    background-color: #0E0F11;
+    position: relative;
+    margin: -6px auto auto auto;
+    border-radius: 24px;
+    z-index: 3;
+    display: flex;
+}
+.containc .trans-c1 .isi-transc1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 35px;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containc p {
+    margin: 0;
+    color: white;
+    font-family: "Product Sans";
+    letter-spacing: 1px;
+}
+.containc .isi-transc1 p {
+    font-size: 15px;
+    font-weight: 900;
+}
+.containc .trans-c2 {
+    width: 50px;
+    height: 30px;
+    background-color: #0E0F11;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-top: -4px;
+    margin-left: -18px;
+    border-radius: 24px;
+}
+
+.containc .trans-c3 {
+    width: 50px;
+    height: 30px;
+    background-color: #0E0F11;
+    position: absolute;
+    transform: rotate(-45deg);
+    margin-top: -4px;
+    margin-left: 98px;
+    border-radius: 24px;
+}
+.trans-c4 {
+    width: 130px;
+    height: 130px;
+    margin-top: -130px;
+    background-color: black;
+    position: relative;
+    border-top-right-radius: 24px;
+    z-index: 2;
+}
+.trans-c5 {
+    width: 150px;
+    height: 50px;
+    transform: rotate(45deg);
+    background-color: black;
+    margin-top: -15px;
+    margin-left: -45px;
+    position: absolute;
+}
+.containc .trans-c6 {
+    width: 720px;
+    height: 5px;
+    position: absolute;
+    margin-top: -30px;
+    background-color: #0E0F11;
+    z-index: 2;
+}
+.containc .trans-c7 {
+    width: 720px;
+    height: 10px;
+    position: absolute;
+    margin-top: 265px;
+    background-color: #0E0F11;
+    z-index: 2;
+}
+.containc .trans-c8 {
+    width: 5px;
+    height: 300px;
+    position: absolute;
+    margin-top: -30px;
+    background-color: #0E0F11;
+    z-index: 2;
+}
+.containc .trans-c9 {
+    width: 5px;
+    height: 300px;
+    position: absolute;
+    margin-top: -30px;
+    right: 0;
+    background-color: #0E0F11;
+    z-index: 2;
+}
+.containc .trans-c10 {
+    width: 135px;
+    height: 135px;
+    bottom: 0;
+    border-top-right-radius: 24px;
+    position: absolute;
+    background-color: #0E0F11;
+    z-index: 2;
+}
+.containc .trans-c11 {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-top: -35px;
+    margin-left: -30px;
+    background-color: #0E0F11;
+    z-index: 2;
+}
+.containc .trans-c12 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 5px;
+    border-top-left-radius: 24px;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: -5px -5px 0 0 #0E0F11;
+    z-index: 2;
+}
+.trans-c13 {
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    margin-top: -53.5px;
+    margin-left: -16px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    transform: rotate(45deg);
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 0 5px 0 -2px black;
+    z-index: 2;
+}
+.trans-c14 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 130px;
+    border-bottom-left-radius: 24px;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: -8px 8px 0 0 black;
+}
+.trans-c15 {
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    margin-top: 81.7px;
+    margin-left: -11px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    transform: rotate(45deg);
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 0 7px 0 -3px #0E0F11;
+    z-index: 2;
+}
+.containc .trans-c16 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: -25px;
+    right: 5px;
+    border-top-right-radius: 24px;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 5px -5px 0 0 #0E0F11;
+    z-index: 2;
+}
+.containc .trans-c17 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border-bottom-right-radius: 24px;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 5px 5px 0 0 #0E0F11;
+    z-index: 2;
+}
+.containc .trans-c18 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 5px;
+    left: 135px;
+    border-bottom-left-radius: 24px;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: -5px 5px 0 0 #0E0F11;
+    z-index: 2;
+}
+.containc .img-containc {
+    width: 720px;
+    position: absolute;
+    z-index: 1;
+}
+.judul-ccontain {
+    width: 125px;
+    height: 95px;
+    margin-top: 35px;
+    border-radius: 24px;
+    background-color: #0e0f11;
+    position: absolute;
+    z-index: 2;
+}
+.judul-ccontain .isi-ccontain {
+    width: 85px;
+    height: 125px;
+    background-color: #0e0f11;
+    margin-top: -30px;
+    position: absolute;
+    font-size: 12px;
+    font-family: "Product Sans";
+    color: white;
+    border-radius: 44px 12px 24px 24px;
+}
+.judul-ccontain .isi-ccontain div {
+    background-color: #0e0f11;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    height: auto;
+    padding: 2px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.judul-ccontain .isi-ccontain .kaos-125k1 {
+    width: 40px;
+    top: 20px;
+    left: 10px;
+}
+.judul-ccontain .isi-ccontain .merch-dll {
+    width: 55px;
+    top: 38px;
+    left: 10px;
+}
+.judul-ccontain .isi-ccontain .konsul-30k1 {
+    width: 45px;
+    top: 45px;
+    left: 60px;
+    transform: rotate(25deg);
+}
+.judul-ccontain .isi-ccontain .buy-now {
+    border: none;
+    bottom: 10px;
+    left: 20px;
+    flex-direction: column;
+    padding: 0;
+}
+.judul-ccontain .isi-ccontain .buy-now p {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.trans-c4 .judul-ccontain .isi-ccontain a {
+    color: white;
+}
+.judul-ccontain .trans-cjudul1 {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 0, 0, 0);
+    margin-top: -20px;
+    margin-left: 85px;
+    position: absolute;
+    z-index: 1;
+    border-bottom-left-radius: 50px;
+    box-shadow: -5px 5px 0 4px #0e0f11;
+}
+.judul-ccontain .icon-judulc {
+    width: 25px;
+    height: 25px;
+    background-color: #df282a;
+    position: absolute;
+    z-index: 2;
+    margin-left: 90px;
+    margin-top: -15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containc .main-judulc {
+    width: 180px;
+    height: 130px;
+    background-color: rgba(14, 15, 17, 0.9);
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+    border-radius: 24px;
+}
+.containc .main-judulc .isimain-judulc {
+    width: 230px;
+    height: 75px;
+    border-radius: 24px 24px 0 24px;
+    background-color: #0c0d0f;
+    position: absolute;
+    margin-left: -50px;
+    z-index: 2;
+} 
+.containc .main-judulc .trans-mainc1 {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    z-index: 1;
+    margin-top: 74px;
+    margin-left: -29px;
+    border-top-right-radius: 50px;
+    box-shadow: 10px -10px 0 0px rgba(14, 15, 17, 0.9);
+}
+.containc .main-judulc .iconmain-judulc {
+    width: 45px;
+    height: 45px;
+    background-color: #0c0d0f;
+    position: absolute;
+    z-index: 3;
+    margin-top: 80px;
+    margin-left: -50px;
+    border-radius: 25px;
+}
+.containc .main-judulc .isibawahmain-judulc {
+    width: 160px;
+    height: 35px;
+    position: absolute;
+    z-index: 4;
+    background-color: #0c0d0f;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0px rgba(255, 255, 255, 0.1);
+}
+
+/* Media Dekstop */
+@media screen and (max-width: 576px) {
+    .containc .main-judulc {
+        width: 130px;
+        height: 100px;
+        background-color: rgba(14, 15, 17, 0.9);
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        z-index: 1;
+        border-radius: 24px;
+    }
+    .containc .main-judulc .isimain-judulc {
+        width: 175px;
+        height: 60px;
+        border-radius: 24px 24px 0 24px;
+        background-color: #0c0d0f;
+        position: absolute;
+        margin-left: -45px;
+        z-index: 2;
+    } 
+    .containc .main-judulc .trans-mainc1 {
+        width: 30px;
+        height: 30px;
+        background-color: rgba(255, 0, 0, 0);
+        position: absolute;
+        z-index: 1;
+        margin-top: 59px;
+        margin-left: -28px;
+        border-top-right-radius: 50px;
+        box-shadow: 10px -10px 0 1px rgba(14, 15, 17, 0.9);
+    }
+    .containc .main-judulc .iconmain-judulc {
+        width: 40px;
+        height: 40px;
+        background-color: #0c0d0f;
+        position: absolute;
+        z-index: 3;
+        margin-top: 60px;
+        margin-left: -45px;
+        border-radius: 25px;
+    }
+    .containc .main-judulc .isibawahmain-judulc {
+        width: 110px;
+        height: 30px;
+        position: absolute;
+        z-index: 4;
+        background-color: #0c0d0f;
+        bottom: 5px;
+        right: 10px;
+        border-radius: 20px;
+        box-shadow: 0 0 5px 0px rgba(255, 255, 255, 0.1);
+    }
+    .containc .donate-mainc {
+        right: 15px;
+        left: auto;
+        width: 65%;
+        display: flex;
+    }
+    .containc .donate-mainc .iconmain-donate2 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2px;
+    }
+    .containc .donate-mainc .iconmain-donate3 {
+        flex-direction: row;
+        align-items: stretch;
+        display: flex;
+    }
+    .containc .donate-mainc .iconmain-donate3 .divp-maindonate2 {
+        flex-direction: column;
+    }
+    .donate-mainc .iconmain-donate2 a .iconmain-donate3 {
+        flex-direction: row;
+        gap: 0;
+    }
+    .containc .donate-mainc .iconmain-donate3 .divimg-maindonate2 {
+        flex: 1;
+    }
+    .containc .donate-mainc .iconmain-donate3 .divp-maindonate2 {
+        flex: 4;
+    }
+    .divimg-maindonate2 {
+        flex: 1;
+    }
+    .divp-maindonate2 {
+        flex: 4;
+    }
+    .containc .donate-mainc .namaadmin-donate1  {
+        font-size: 5px;
+        text-align: left;
+    }
+    .containc .donate-mainc .iconmain-donate2 a .iconmain-donate3 .divp-maindonate2 {
+        align-items: flex-start;
+    }
+    .containc .iconmain-donate2 a .iconmain-donate3 .divp-maindonate2 {
+        justify-content: center;
+    }
+    .containc .donate-mainc .iconmain-donate2 a .divimg-maindonate2 {
+        align-items: center;
+    }
+    .containc .donate-mainc .iconmain-donate3 {
+        border-radius: 12px 0 0 12px;
+    }
+}
+
+
+.donate-mainc {
+    width: 50%;
+    height: 110px;
+    background-color: rgba(14, 15, 17, 0.9);
+    position: absolute;
+    z-index: 1;
+    left: 25px;
+    top: 40px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    padding: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.containc .donate-mainc .iconmain-donate2 div{
+    flex: 1;
+}
+.containc .donate-mainc .iconmain-donate1 {
+    flex-direction: column;
+}
+.containc .donate-mainc .iconmain-donate1 .img-maindonate1, .img-maindonate3 {
+    width: 25px;
+}
+.iconmain-donate2 a .iconmain-donate3 {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.iconmain-donate2 a .iconmain-donate3 .divp-maindonate2 {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.containc .donate-mainc .namaadmin-donate1  {
+    font-size: 7px;
+    text-align: center;
+}
+.containc .donate-mainc .namaadmin-donate2  {
+    font-size: 10px;
+    text-align: center;
+}
+.containc .donate-mainc div {
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+.containc .donate-mainc .iconmain-donate2 {
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 3px;
+}
+.donate-mainc .iconmain-donate2 a .divimg-maindonate2 {
+    align-items: flex-end;
+}
+.containc .donate-mainc .iconmain-donate2 a .iconmain-donate3 {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.containc .donate-mainc .linkadmin {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.containc .donate-mainc .linkadmin:hover {
+    background-color: red;
+}
+.containc .donate-mainc .iconmain-donate2 {
+    flex: 3;
+}
+.containc .donate-mainc .iconmain-donate1 {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.containc .donate-mainc p {
+    font-size: 10px;
+}
+.main-judulc .isibawahmain-judulc {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-judulc .iconmain-judulc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-judulc .isibawahmain-judulc .linksosmed-mainc .logo-sosmed, .main-judulc .iconmain-judulc .linksosmed-mainc .logo-sosmed {
+    width: 20px;
+}
+.containc .main-judulc .isimain-judulc p {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.containc .main-judulc .isimain-judulc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trans-c4 .judul-ccontain .icon-judulc .icontag-judulc {
+    width: 20px;
+}
+/* Container D */
+
+.containd {
+    max-width: 720px;
+    min-height: 200px;
+    background-color: #0E0F11;
+    margin-top: 90px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 5;
+}
+
+.containe-icon {
+    width: 70px;
+    height: 80px;
+    background-color: #0E0F11;
+    border: 10px solid black;
+    border-radius: 24px;
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+    z-index: 4;
+    margin-left: 30px;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.icon-b {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+}
+.ujitrans-e {
+    width: 50px;
+    height: 50px;
+    background-color: rgba( 255, 0, 0, 0);
+    /* background-color: #ebeeff; */
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -119px;
+    border-top-right-radius: 24px;
+    box-shadow: 20px 0 0 0 #0E0F11;
+}
+.ujitrans2-e {
+    width: 45px;
+    height: 45px;
+    background-color: rgba( 255, 0, 0, 0);
+    /* background-color: #ebeeff; */
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 115px;
+    border-top-left-radius: 24px;
+    box-shadow: -20px -10px 0 0 #0E0F11;
+}
+.ujitrans3-e {
+    width: 40px;
+    height: 50px;
+    background-color: rgba( 255, 0, 0, 0);
+    /* background-color: #ebeeff; */
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 130px;
+    border-top-left-radius: 21px;
+    box-shadow: -5px -8px 0 0 black;
+}
+.ujitrans4-e {
+    width: 40px;
+    height: 40px;
+    background-color: rgba( 255, 0, 0, 0);
+    /* background-color: #ebeeff; */
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -130px;
+    border-top-right-radius: 24px;
+    box-shadow: 7px -7px 0 2px black;
+}
+
+
+/* Container E */
+
+.containe {
+    max-width: 720px;
+    min-height: 200px;
+    background-color: #ebeeff;
+    margin-top: 7px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+    margin-top: -70px;
+    box-sizing: border-box;
+    font-family: "product sans";
+    padding: 15px 24px 24px 24px;
+}
+.containe .headline-e .judul-e {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0;
+}
+.containe .headline-e .keterangan-e {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.containe .headline-e {
+    margin-left: 120px;
+}
+.icon-e {
+    width: 35px;
+    height: 35px;
+    background-color: #ebeeff;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+}
+.body-containe{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 5px;
+}
+.body-containe a .content-e {
+    background-color: black;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.body-containe a .content-e .title-content {
+    width: auto;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.6);
+    margin-top: auto;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body-containe a {
+    text-decoration: none;
+    color: white;
+}
+.body-containe p {
+    font-size: 10px;
+    margin: 0;
+}
+/* Kontainer F */
+
+.containf {
+    max-width: 720px;
+    height: auto;
+    background-color: orange;
+    margin-top: 8px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+    box-sizing: border-box;
+    font-family: "product sans";
+    padding: 15px 24px 24px 24px;   
+}
+.containf p {
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+.containf a img {
+    width: 20px;
+}
+.containf a {
+    margin: 5px;
+}
