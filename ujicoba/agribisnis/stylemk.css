@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url('ProductSans-Regular.ttf') format('truetype');
+}
+
+.containermk {
+    max-width: 700px;
+    height: auto;
+    color: white;
+    font-family: "Product Sans";
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.containmk-a {
+    max-width: 700px;
+    height: 370px;
+    background-color: red;
+    position: relative;
+    display: flex;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.containermk .containmk-a .background-covermk {
+    max-width: 1000px;
+    position: relative;
+    z-index: 1;
+}
+
+.containmk-button {
+    max-width: 700px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: -45px;
+    z-index: 2;
+}
+
+.button-mk {
+    position: absolute;
+    z-index: 2;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 24px;
+    
+}
+
+.button-mk .buttonjudul-mk {
+    font-size: 10px;
+}
+
+.containermk .containmk-b {
+    max-width: 700px;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 24px;
+    margin-top: -20px;
+    padding: 90px 20px 20px 20px;
+    box-sizing: border-box;
+}
+
+.containermk .containmk-b .aboutmk {
+    color: black;
+    font-size: 16px;
+}
+
+.containermk .containmk-b .isi-aboutmk {
+    font-size: 10px;
+    color: black;
+    margin-top: 10px;
+}
+
