@@ -84,4 +84,161 @@ p {
     color: black;
     margin-top: 10px;
 }
+.containmk-a .menu {
+    background-color: #1b1b1b;
+    position: absolute;
+    z-index: 4;
+    max-width: 200px;
+    width: 50%;
+    height: 35px;
+    border-radius: 15px;
+    display: flex;
+    margin-top: 10px;
+    left: 10px;
+}
+.containmk-a .menu ul {
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+.containmk-a .menu ul li a img{
+    width: 18px;
+}
+
+/* Hamburger Menu */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    min-width: 25px;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 8px;
+    margin-left: 12px;
+    z-index: 2;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    margin-top: -3px;
+    margin-left: -9px;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.menu-toggle span {
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+    margin-left: -2px;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+    
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+    
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Responsive */
+
+/* Bentuk Mobile */
+
+@media screen and (max-width: 576px) {
+    .containermk .containmk-a .background-covermk {
+        margin-left: -40px;
+    }
+
+    .containmk-a .menu {
+        position: absolute;
+        left: 85%;
+        top: 10px;
+    }
+
+    .containmk-a .menu ul{
+    position: absolute;
+    flex-direction: column;
+    margin-top: 40px;
+    z-index: 1;
+   } 
+
+   .containmk-a .menu ul li {
+    background-color: #1b1b1b;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 1s;
+   }
+
+   .menu ul li:nth-child(1) {
+    transform: translateY(-40px);
+    opacity: 0;
+   }
+   .containmk-a .menu ul li:nth-child(2) {
+    transform: translateY(-75px);
+    opacity: 0;
+   }
+   .containmk-a .menu ul li:nth-child(3) {
+    transform: translateY(-110px);
+    opacity: 0;
+   }
+   .containmk-a .menu ul li:nth-child(4) {
+    transform: translateY(-145px);
+    opacity: 0;
+   }
+   .containmk-a .menu ul li:nth-child(5) {
+    transform: translateY(-180px);
+    opacity: 0;
+   }
+
+   .containmk-a .menu {
+    max-width: 45px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+   }
+   .menu-toggle {
+    display: flex;
+   }
+
+   .containmk-a .menu ul li.slide {
+    transform: translate(0);
+    opacity: 1;
+   }
+}
 
