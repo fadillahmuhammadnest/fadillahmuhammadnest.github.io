@@ -54,7 +54,7 @@ p {
     z-index: 2;
     width: auto;
     height: auto;
-    padding: 10px;
+    padding: 10px 30px;
     background-color: black;
     border-radius: 24px;
     
@@ -241,4 +241,37 @@ p {
     opacity: 1;
    }
 }
-
+.containmk-b .menujurnal-mk {
+    padding-top: 10px;
+}
+.containmk-b .menujurnal-mk .judulmk-jurnal {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.containmk-b .menujurnal-mk .link-jurnal {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    margin: 0;
+}
+.containmk-b .menujurnal-mk ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    flex-direction: row;
+    gap: 5px;
+}
+.containmk-b .menujurnal-mk ul li a div {
+    min-height: 15px;
+    min-width: 30px;
+    background-color: black;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
