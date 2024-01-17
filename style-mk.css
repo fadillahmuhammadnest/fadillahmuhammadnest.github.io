@@ -268,6 +268,7 @@ p {
     z-index: 1;
     flex-direction: row;
     gap: 5px;
+    flex-wrap: wrap;
 }
 .containmk-b .menujurnal-mk ul li a div {
     min-height: 15px;
@@ -443,7 +444,7 @@ p {
 .containf {
     max-width: 720px;
     height: auto;
-    background-color: orange;
+    background-color: #F08519;
     margin-top: 8px;
     border-radius: 24px;
     position: relative;

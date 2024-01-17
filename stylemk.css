@@ -286,3 +286,211 @@ ul {
 
 
 
+/* FILE MK LAMA */
+/* A Template Style Utama terdiri dari logo whatsapp/whatsapp Group, bagian kepala navbar dan judul website, dan foot atau bagian copyright */
+/* 1. Template Whatsapp */
+.whatsapp {
+    position: fixed;
+    right: 7%;
+    bottom: 7%;
+    width: 50px;
+    height: 50px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 50% 50% 50% 0;
+    overflow: hidden;
+    
+}
+
+.whatsapp a img {
+    display: inline-block;
+    width: 70px;
+    line-height: 50px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+/* 2. Template Navbar atau Menu Jurusan */
+
+.navbar {
+    float: right;
+}
+
+/* 3. Template Nama Web Mahasiswa Sabi*/
+.namaweb{
+    width: 300px;
+}
+
+.namaweb a {
+    display: inline;
+}
+
+.header {
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header h1{
+    margin-left: 10px;
+}
+
+.moto{
+    color: gray;
+    margin-top: -25px;
+}
+
+/* 4. Template Footer atau kaki atau bagian copyright */
+
+.foot {
+    height: auto;
+    background-color: black;
+    color: white;
+    
+}
+
+.foot div ul li a{
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.foot div{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.imgfoot img{
+    width: 200px;
+    margin: 15px;
+}
+
+.igimg {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+}
+
+.igimg img {
+    width: 35px;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+.sosmedfoot ul li {
+    list-style-type: none;
+}
+
+/* C. Template Universal berupa tombol menu dan lain-lain */
+
+.navmain ul li, .group, .cover a, .navbar a, .badanjurusan div ul li {
+    display: inline-block;
+    height: 15px;
+    padding: 8px;
+    background-color: black;
+    margin: 2px 0;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: small;
+}
+
+.navmain ul li:hover, .group:hover, .cover a:hover, .navbar a:hover {
+    background-color: #b71f1a;
+    color: black;
+}
+
+.badanjurusan div ul li:hover {
+    background-color: forestgreen;
+}
+
+.navmain ul {
+    text-align: center;
+}
+
+.navmain ul li a, .badanjurusan div ul li a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+}
+
+
+
+/* Style Mata Kuliah Main/Kontainer */
+
+.kontainermatkul .sinopsis #listsinopsis li {
+    background-color: white;
+    list-style-type: disc;
+}
+
+.kontainermatkul .sinopsis #listsinopsis {
+    margin-left: 0;
+}
+
+.kontainermatkul {
+    font-size: 13px;
+}
+
+.kontainermatkul {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+.matkul {
+    text-align: center;
+    border-top: 2px solid darkgray;
+    border-bottom: 2px solid darkgray;
+    margin: 10px auto;
+    max-width: 900px;
+}
+
+.kontainermatkul div ul li, div h4 {
+    margin: 0;
+}
+
+h4 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.kontainermatkul ul li {
+    list-style-type: none;
+    margin-left: -10px;
+    padding: 10px;
+}
+
+.kontainermatkul div ul li a {
+        text-decoration: none;
+        color: black;
+}
+
+.kontainermatkul div ul li a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.kontainermatkul div ul li:nth-child(2n-1) {
+    background-color: #4a785e;
+}
+
+.kontainermatkul div ul li:nth-child(2n) {
+    background-color: #b4daa7;
+}
+
+.kontainermatkul div ul {
+    margin-left: -40px;
+}
