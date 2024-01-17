@@ -32,6 +32,7 @@ p {
     display: flex;
     border-radius: 24px;
     overflow: hidden;
+    z-index: 3;
 }
 
 .containermk .containmk-a .background-covermk {
@@ -72,6 +73,8 @@ p {
     margin-top: -20px;
     padding: 90px 20px 20px 20px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 2;
 }
 
 .containermk .containmk-b .aboutmk {
@@ -275,3 +278,188 @@ p {
     justify-content: center;
     border-radius: 10px;
 }
+.menujurnal-mk ul .link-jurnal a div:hover {
+    background-color: #1a3387;
+}
+
+/* Contain e */
+.containe {
+    max-width: 720px;
+    min-height: 200px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-family: "product sans";
+}
+.containe .headline-e .judul-e {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}
+.containe .headline-e .keterangan-e {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+    color: black;
+}
+.icon-e {
+    width: 35px;
+    height: 35px;
+    background-color: #ebeeff;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+}
+.body-containe{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 5px;
+}
+.body-containe a .content-e {
+    background-color: black;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.body-containe a .content-e .title-content {
+    width: auto;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.6);
+    margin-top: auto;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body-containe a {
+    text-decoration: none;
+    color: white;
+}
+.body-containe p {
+    font-size: 10px;
+    margin: 0;
+}
+
+/* End Contain e */
+
+/* Start Isi Mata Kuliah */
+.containermk .containmk-c {
+    max-width: 700px;
+    min-height: 400px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 24px;
+    margin-top: -80px;
+    padding: 90px 20px 20px 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+.containmk-c .judul-mksemester {
+    font-size: 20px;
+}
+.containmk-c .menumatkul-mk {
+    padding-top: 10px;
+}
+.containmk-c .menumatkul-mk .judulmk-semester {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.containmk-c .menumatkul-mk .link-matkul {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    margin: 0;
+}
+.containmk-c .menumatkul-mk ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    flex-direction: row;
+    gap: 5px;
+}
+.containmk-c .menumatkul-mk ul li a div {
+    min-height: 15px;
+    min-width: 30px;
+    background-color: white;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.containmk-c .menumatkul-mk ul li a div:hover{
+    background-color: red;
+}
+/* .containmk-b .semester .menumatkul-mk {
+    background-color: blueviolet;
+} */
+.semester {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 5px;
+}
+
+/* Bentuk Mobile */
+
+@media screen and (max-width: 576px) {
+    .containmk-c .semester{
+        display: flex;
+        flex-direction: column;
+    }
+    .containmk-c .semester .menumatkul-mk:nth-child(2n) .judulmk-semester{
+        text-align: left;
+    }
+    .containmk-c .semester .menumatkul-mk:nth-child(2n-1) .judulmk-semester{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .containmk-c .semester .menumatkul-mk:nth-child(2n-1) ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* Contain c end */
+
+/* Start Contain f footer mahasiswa sabi */
+.containf {
+    max-width: 720px;
+    height: auto;
+    background-color: orange;
+    margin-top: 8px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+    box-sizing: border-box;
+    font-family: "product sans";
+    padding: 15px 24px 24px 24px;   
+}
+.containf p {
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+.containf a img {
+    width: 20px;
+}
+.containf a {
+    margin: 5px;
+}
+/* Contain f kaki end */

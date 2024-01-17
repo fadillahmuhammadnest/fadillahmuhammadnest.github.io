@@ -1,0 +1,466 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url('ProductSans-Regular.ttf') format('truetype');
+}
+
+.containermk {
+    max-width: 700px;
+    height: auto;
+    color: white;
+    font-family: "Product Sans";
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.containmk-a {
+    max-width: 700px;
+    height: 370px;
+    background-color: red;
+    position: relative;
+    display: flex;
+    border-radius: 24px;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.containermk .containmk-a .background-covermk {
+    max-width: 1000px;
+    position: relative;
+    z-index: 1;
+}
+
+.containmk-button {
+    max-width: 700px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: -45px;
+    z-index: 4;
+}
+
+.button-mk {
+    position: absolute;
+    z-index: 2;
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    background-color: black;
+    border-radius: 24px;
+    
+}
+
+.button-mk .buttonjudul-mk {
+    font-size: 10px;
+}
+
+.containermk .containmk-b {
+    max-width: 700px;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 24px;
+    margin-top: -20px;
+    padding: 90px 20px 20px 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.containermk .containmk-b .aboutmk {
+    color: black;
+    font-size: 16px;
+}
+
+.containermk .containmk-b .isi-aboutmk {
+    font-size: 10px;
+    color: black;
+    margin-top: 10px;
+}
+.containmk-a .menu {
+    background-color: #1b1b1b;
+    position: absolute;
+    z-index: 4;
+    max-width: 200px;
+    width: 50%;
+    height: 35px;
+    border-radius: 15px;
+    display: flex;
+    margin-top: 10px;
+    left: 10px;
+}
+.containmk-a .menu ul {
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+.containmk-a .menu ul li a img{
+    width: 18px;
+}
+
+/* Hamburger Menu */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    min-width: 25px;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 8px;
+    margin-left: 12px;
+    z-index: 2;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    margin-top: -3px;
+    margin-left: -9px;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.menu-toggle span {
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+    margin-left: -2px;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+    
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+    
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Responsive */
+
+/* Bentuk Mobile */
+
+@media screen and (max-width: 576px) {
+    .containermk .containmk-a .background-covermk {
+        margin-left: -40px;
+    }
+
+    .containmk-a .menu {
+        position: absolute;
+        left: 85%;
+        top: 10px;
+    }
+
+    .containmk-a .menu ul{
+    position: absolute;
+    flex-direction: column;
+    margin-top: 40px;
+    z-index: 1;
+   } 
+
+   .containmk-a .menu ul li {
+    background-color: #1b1b1b;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 1s;
+   }
+
+   .menu ul li:nth-child(1) {
+    transform: translateY(-40px);
+    opacity: 0;
+   }
+   .containmk-a .menu ul li:nth-child(2) {
+    transform: translateY(-75px);
+    opacity: 0;
+   }
+   .containmk-a .menu ul li:nth-child(3) {
+    transform: translateY(-110px);
+    opacity: 0;
+   }
+   .containmk-a .menu ul li:nth-child(4) {
+    transform: translateY(-145px);
+    opacity: 0;
+   }
+   .containmk-a .menu ul li:nth-child(5) {
+    transform: translateY(-180px);
+    opacity: 0;
+   }
+
+   .containmk-a .menu {
+    max-width: 45px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+   }
+   .menu-toggle {
+    display: flex;
+   }
+
+   .containmk-a .menu ul li.slide {
+    transform: translate(0);
+    opacity: 1;
+   }
+}
+.containmk-b .menujurnal-mk {
+    padding-top: 10px;
+}
+.containmk-b .menujurnal-mk .judulmk-jurnal {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.containmk-b .menujurnal-mk .link-jurnal {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    margin: 0;
+}
+.containmk-b .menujurnal-mk ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    flex-direction: row;
+    gap: 5px;
+}
+.containmk-b .menujurnal-mk ul li a div {
+    min-height: 15px;
+    min-width: 30px;
+    background-color: black;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.menujurnal-mk ul .link-jurnal a div:hover {
+    background-color: #1a3387;
+}
+
+/* Contain e */
+.containe {
+    max-width: 720px;
+    min-height: 200px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-family: "product sans";
+}
+.containe .headline-e .judul-e {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}
+.containe .headline-e .keterangan-e {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+    color: black;
+}
+.icon-e {
+    width: 35px;
+    height: 35px;
+    background-color: #ebeeff;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+}
+.body-containe{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 5px;
+}
+.body-containe a .content-e {
+    background-color: black;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.body-containe a .content-e .title-content {
+    width: auto;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.6);
+    margin-top: auto;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body-containe a {
+    text-decoration: none;
+    color: white;
+}
+.body-containe p {
+    font-size: 10px;
+    margin: 0;
+}
+
+/* End Contain e */
+
+/* Start Isi Mata Kuliah */
+.containermk .containmk-c {
+    max-width: 700px;
+    min-height: 400px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 24px;
+    margin-top: -80px;
+    padding: 90px 20px 20px 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+.containmk-c .judul-mksemester {
+    font-size: 20px;
+}
+.containmk-c .menumatkul-mk {
+    padding-top: 10px;
+}
+.containmk-c .menumatkul-mk .judulmk-semester {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.containmk-c .menumatkul-mk .link-matkul {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    margin: 0;
+}
+.containmk-c .menumatkul-mk ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.containmk-c .menumatkul-mk ul li a div {
+    min-height: 15px;
+    min-width: 30px;
+    background-color: white;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.containmk-c .menumatkul-mk ul li a div:hover{
+    background-color: red;
+}
+/* .containmk-b .semester .menumatkul-mk {
+    background-color: blueviolet;
+} */
+.semester {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 5px;
+}
+
+/* Bentuk Mobile */
+
+@media screen and (max-width: 576px) {
+    .containmk-c .semester{
+        display: flex;
+        flex-direction: column;
+    }
+    .containmk-c .semester .menumatkul-mk:nth-child(2n) .judulmk-semester{
+        text-align: left;
+    }
+    .containmk-c .semester .menumatkul-mk:nth-child(2n-1) .judulmk-semester{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .containmk-c .semester .menumatkul-mk:nth-child(2n-1) ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* Contain c end */
+
+/* Start Contain f footer mahasiswa sabi */
+.containf {
+    max-width: 720px;
+    height: auto;
+    background-color: orange;
+    margin-top: 8px;
+    border-radius: 24px;
+    position: relative;
+    z-index: 3;
+    box-sizing: border-box;
+    font-family: "product sans";
+    padding: 15px 24px 24px 24px;   
+}
+.containf p {
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+.containf a img {
+    width: 20px;
+}
+.containf a {
+    margin: 5px;
+}
+/* Contain f kaki end */
