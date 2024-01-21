@@ -40,7 +40,10 @@ body {
     border-radius: 15px;
     display: flex;
 }
-
+.containa .poster {
+    width: 720px;
+    height: ;
+}
 .containa .homeicon {
     background-color: black;
     height: 35px;
@@ -64,7 +67,7 @@ body {
     width: 35px;
 }
 .containa .poster {
-    height: 400px;
+    height: 480px;
     position: absolute;
     margin-top: -12px;
     margin-left: -15px;
