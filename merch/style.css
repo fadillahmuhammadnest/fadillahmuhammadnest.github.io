@@ -66,6 +66,7 @@ body {
 .containa .homeicon .icon img {
     width: 35px;
 }
+
 .containa .poster {
     height: 480px;
     position: absolute;
@@ -73,7 +74,19 @@ body {
     margin-left: -15px;
     z-index: 2;
 }
-
+.container .containa .judul-foto {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    font-family: "product sans";
+    margin-left: 20px;
+}
+.container .containa .judul-foto:nth-child(1n) {
+    margin-top: 100px;
+}
+.container .containa .judul-foto:nth-child(2n) {
+    margin-top: 120px;
+}
 .alasbawah {
     background-color: #1b1b1b;
     position: relative;
