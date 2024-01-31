@@ -1,0 +1,317 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+p {
+    margin: 0;
+    color: white;
+    font-family: "Product Sans";
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url('ProductSans-Regular.ttf') format('truetype');
+}
+
+.container-jr {
+    max-width: 720px;
+    min-height: 300px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.contain-jr-a {
+    max-width: 720px;
+    min-height: 100px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contain-jr-a .menu {
+    background-color: #1b1b1b;
+    position: relative;
+    z-index: 4;
+    max-width: 200px;
+    width: 50%;
+    height: 35px;
+    border-radius: 15px;
+    display: flex;
+    margin-top: 10px;
+    right: 15px;
+}
+.contain-jr-a .menu ul {
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+.contain-jr-a .menu ul li a img{
+    width: 18px;
+}
+
+/* Hamburger Menu */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    min-width: 25px;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 8px;
+    margin-left: 12px;
+    z-index: 2;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    margin-top: -3px;
+    margin-left: -10px;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.menu-toggle span {
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+    margin-left: -2px;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+    
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+    
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Responsive */
+
+/* Bentuk Mobile */
+
+@media screen and (max-width: 576px) {
+
+    .contain-jr-a .menu {
+        position: absolute;
+        top: 10px;
+    }
+
+    .contain-jr-a .menu ul{
+    position: absolute;
+    flex-direction: column;
+    margin-top: 40px;
+    z-index: 1;
+   } 
+
+   .contain-jr-a .menu ul li {
+    background-color: #1b1b1b;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 1s;
+   }
+
+   .menu ul li:nth-child(1) {
+    transform: translateY(-40px);
+    opacity: 0;
+   }
+   .contain-jr-a .menu ul li:nth-child(2) {
+    transform: translateY(-75px);
+    opacity: 0;
+   }
+   .contain-jr-a .menu ul li:nth-child(3) {
+    transform: translateY(-110px);
+    opacity: 0;
+   }
+   .contain-jr-a .menu ul li:nth-child(4) {
+    transform: translateY(-145px);
+    opacity: 0;
+   }
+   .contain-jr-a .menu ul li:nth-child(5) {
+    transform: translateY(-180px);
+    opacity: 0;
+   }
+
+   .contain-jr-a .menu {
+    max-width: 45px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+   }
+   .menu-toggle {
+    display: flex;
+   }
+
+   .contain-jr-a .menu ul li.slide {
+    transform: translate(0);
+    opacity: 1;
+   }
+}
+
+.containa .judul a {
+    position: relative;
+    z-index: 5;
+}
+.alasbawah {
+    background-color: #1b1b1b;
+    position: relative;
+    z-index: 5;
+    width: 220px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: 12px;
+    border-radius: 24px;
+}
+.judul {
+    background-color: #1b1b1b;
+    padding-top: 10px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 6;
+    width: 180px;
+    height: 100px;
+    margin-top: -130px;
+    margin-left: 12px;
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.judul p {
+    color: white;
+    font-size: 11px;
+    font-family: "Product Sans";
+    margin: -15px 5px 10px 5px;
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+.whatsapp {
+    background-color: #c8f135;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    z-index: 7;
+    border-radius: 20px;
+    margin-top: -75px;
+    margin-left: 175px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.whatsapp a img {
+    width: 25px;
+
+}
+.judul a img {
+    width: 160px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 8;
+    margin-bottom: -20px;
+    margin-left: -10px;
+}
+.judul .donate-h1, .judul .cart-h1{
+    width: 75px;
+    height: 20px;
+    position: relative;
+    z-index: 8;
+    background-color: rgba( 254, 254, 254, 0.3);
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: -30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.judul .ptitle {
+    color: white;
+    font-size: 10px;
+    font-family: "Product Sans";
+    margin: 5px;
+    letter-spacing: 1px;
+    line-height: 10px;
+    text-decoration: none;
+}
+/* Responsive */
+
+/* Bentuk Mobile */
+
+@media screen and (max-width: 576px) {
+    .alasbawah {
+        margin-top: -10px;
+    }
+}
+
+.container-jr .background-covermk {
+    max-width: 1000px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Container B */
+
+.container-jr .contain-jr-b {
+    max-width: 720px;
+    min-height: 100px;
+    background-color: rgb(20, 20, 20);
+    margin-top: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsive */
+
+/* Bentuk Mobile */
+
+@media screen and (max-width: 576px) {
+    .container-jr .contain-jr-b {
+        margin-top: 140px;
+    }
+}
+
+.container-jr .contain-jr-b .nama-mata {
+    padding: 0 7px 15px 7px;
+    text-align: center;
+    font-size: 13px;
+}
+.container-jr .contain-jr-b {
+    padding: 15px;
+}
+
