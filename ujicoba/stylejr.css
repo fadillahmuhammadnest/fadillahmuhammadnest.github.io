@@ -350,4 +350,11 @@ p {
     margin-top: -50px;
     position: relative;
     z-index: 2;
+    padding: 60px 15px 15px 15px;
+}
+
+.container-jr .contain-jr-c .judul-jrc .judul-list-jrc {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
 }
