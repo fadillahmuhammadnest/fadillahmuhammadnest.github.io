@@ -321,11 +321,14 @@ p {
     margin-bottom: 10px;
 }
 
-.container-jr .contain-jr-b .tentang-mata, .container-jr .contain-jr-b ul li {
+.container-jr .contain-jr-b .tentang-mata, .container-jr .contain-jr-b li {
     padding-bottom: 5px;
     font-size: 13px;
     color: white;
     font-family: "Product Sans";
+}
+.container-jr .contain-jr-b .tentang-mata h2 {
+    margin-top: -3px;
 }
 .tentang-mata::-webkit-scrollbar {
     width: 5px;
