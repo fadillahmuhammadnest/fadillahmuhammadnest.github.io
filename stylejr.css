@@ -330,6 +330,13 @@ p {
 .container-jr .contain-jr-b .tentang-mata h2 {
     margin-top: -3px;
 }
+.container-jr .contain-jr-b .tentang-mata p{
+    padding-top: 10px;
+}
+.container-jr .contain-jr-b .tentang-mata h4 {
+    margin-bottom: -10px;
+    padding: 0;
+}
 .tentang-mata::-webkit-scrollbar {
     width: 5px;
 }
