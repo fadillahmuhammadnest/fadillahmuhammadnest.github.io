@@ -327,14 +327,12 @@ p {
     color: white;
     font-family: "Product Sans";
 }
-.container-jr .contain-jr-b .tentang-mata h2 {
-    margin-top: -3px;
-}
+
 .container-jr .contain-jr-b .tentang-mata p{
     padding-top: 10px;
 }
-.container-jr .contain-jr-b .tentang-mata h4, .container-jr .contain-jr-b .tentang-mata h3 {
-    margin-bottom: -10px;
+.container-jr .contain-jr-b .tentang-mata h4, .container-jr .contain-jr-b .tentang-mata h3, .container-jr .contain-jr-b .tentang-mata h2 {
+    margin-bottom: -3px;
     padding: 0;
 }
 .tentang-mata::-webkit-scrollbar {
