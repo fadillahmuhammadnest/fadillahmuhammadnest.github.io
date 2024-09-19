@@ -450,12 +450,12 @@ p {
     z-index: 10;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 460px) {
     .container-jr .contain-jr-b {
         margin-top: 140px;
     }
     .containads img {
-        max-width: 460px;
+        max-width: 440px;
     }    
 }
 
