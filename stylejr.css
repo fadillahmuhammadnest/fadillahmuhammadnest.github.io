@@ -446,16 +446,13 @@ p {
 
 
 .containads img {
-    width: 680px;
+    width: 600px;
     z-index: 10;
 }
 
-@media screen and (max-width: 500px) {
-    .container-jr .contain-jr-b {
-        margin-top: 140px;
-    }
+@media screen and (max-width: 600px) {
     .containads img {
-        width: 440px;
+        width: 400px;
     }    
 }
 
