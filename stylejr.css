@@ -446,7 +446,7 @@ p {
 
 
 .containads img {
-    max-width: 680px;
+    width: 680px;
     z-index: 10;
 }
 
@@ -455,7 +455,7 @@ p {
         margin-top: 140px;
     }
     .containads img {
-        max-width: 440px;
+        width: 440px;
     }    
 }
 
