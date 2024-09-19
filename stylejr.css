@@ -450,7 +450,7 @@ p {
     z-index: 10;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 500px) {
     .container-jr .contain-jr-b {
         margin-top: 140px;
     }
