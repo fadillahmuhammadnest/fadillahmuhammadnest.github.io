@@ -435,3 +435,28 @@ p {
 /* Contain f kaki end */
 
 /* End Contain Foot */
+
+/* Koding Iklan Mata Kuliah */
+
+.containads {
+    z-index: 7;
+    max-width: 700px;
+    align-items: center;
+}
+
+
+.containads img {
+    max-width: 680px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 576px) {
+    .container-jr .contain-jr-b {
+        margin-top: 140px;
+    }
+    .containads img {
+        max-width: 460px;
+    }    
+}
+
+/* Ending Iklan Mata Kuliah */
