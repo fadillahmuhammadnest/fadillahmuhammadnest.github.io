@@ -491,6 +491,7 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     gap: 5px;
+    margin-bottom: 15px;
 }
 
 /* Bentuk Mobile */
