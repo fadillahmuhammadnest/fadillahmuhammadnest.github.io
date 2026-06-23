@@ -333,7 +333,11 @@ body {
     box-sizing: border-box;
     font-family: "product sans";
     padding: 24px;
+    padding-top: 10px;
     flex-direction: column;
+}
+.containb .headline-b {
+    margin-top: 14px;
 }
 .containb .headline-b .judul-b {
     font-size: 22px;
